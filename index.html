@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="logo.jpeg" alt="Logo Bajo el Sol y la Cerveza" class="logo">
+    </header>
+    <!-- Contenido principal -->
+    <main>
+        <!-- Página de inicio de sesión -->
+        <form action="processform.php" method="post">
+            <section id="login" class="view active">
+                <div class="login-container">
+                    <div class="login-form">
+                        <h1>Iniciar Sesión</h1>
+                        <form id="login-form">
+                            <input type="text" name="username" placeholder="Usuario"
+                                style="width: 200px; height: 40px; font-size: 16px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 30px;">
+                            <input type="password" name="password" placeholder="Contraseña"
+                                style="width: 200px; height: 40px; font-size: 16px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 30px;">
+                            <div class="login-boton">
+                                <button type="submit">Iniciar Sesión</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

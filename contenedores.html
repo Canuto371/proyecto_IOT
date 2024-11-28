@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <button id="menu-btn" class="menu-btn">☰</button>
+        <img src="logo.jpeg" alt="Logo Bajo el Sol y la Cerveza" class="logo">
+    </header>
+    
+    <!-- Sliding sidebar -->
+    <div id="sidebar">
+        <ul>
+            <li>
+                <a href="#usuario">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <span class="text">Usuario</span>
+
+                </a>
+            </li>
+            <li>
+                <a href="#contenedores-info">
+                    <span class="text">⛟ Contenedores</span>
+                </a>
+            </li>
+            <li>
+                <a href="#sobrenosotras">
+                    <span class="text">☀︎ Sobre Nosotras</span>
+                </a>
+            </li>
+            <li class="final">
+                <a href="#contacto">
+                    <span class="text">Contacto ✉</span>
+                </a>
+                <img src="logo2.jpeg" alt="Logo Bajo el Sol y la Cerveza" id="logo2">
+            </li>
+        </ul>
+    </div>
+    
+    <main>
+
+    <!-- Sección de Información de Usuario -->
+    <section id="usuario" class="hidden">
+        <div class="titu">
+            <h2>Información de Usuario ☻</h2>
+            <div class="usu">
+                <img src="usuario.jpeg" alt="Usuario">
+            </div>
+            <h3>
+                Nombre de Usuario: admin <br>
+                Contraseña: 1234 <br>
+            </h3>
+            <h4>Contenedores Actuales: </h4>
+            <div class="usu-contenedor">
+                <h3>Contenedor #001</h3>
+                <p><strong>Ubicación:</strong> Mérida, Yucatán</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="hidden">
+        <div class="titu">
+            <h2>Contacto Empresa </h2>
+            <div class="font">
+                <div class="contact-info">
+                    <p><strong>Dirección:</strong> Enrique Mazón López 965, 83000 Hermosillo, Sonora</p>
+                    <p><strong>Teléfono:</strong> +52 662 475 8524</p>
+                    <p><strong>Correo Electrónico 📩:</strong> BajoElSol_y_LaCerveza@gmail.com</p>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..."
+                            required></textarea>
+
+                        <button type="submit">Enviar Mensaje</button>
+                    </form>
+                    <div class="success-message" id="successMessage" style="display: none;">
+                        ¡Tu mensaje ha sido enviado con éxito!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sección Sobre Nosotras -->
+    <section id="sobrenosotras" class="hidden">
+        <div class="titu">
+            <h2>☀︎ Sobre Nosotras ☀︎</h2>
+        </div>
+        <div class="integrantes-grid">
+            <!-- Integrante 1 -->
+            <div class="integrantes">
+                <div class="foto">
+                    <img src="regina.jpeg" alt="Regina">
+                </div>
+                <div class="font">
+                    <p class="nombre">Maria Regina Orduño López</p>
+                    <p class="puesto">Product Owner</p>
+                    <p> Hola, soy Regina, me encanta aprender cosas nuevas sobre programación. Estoy en 3er semestre
+                        de la carrera de Ingeniería en Tecnologías Computacionales y me gusta participar en
+                        proyectos creativos que ayuden a mejorar nuestra comunidad.</p>
+                </div>
+            </div>
+            <!-- Integrante 2 -->
+            <div class="integrantes">
+                <div class="foto">
+                    <img src="eli.jpeg" alt="Elizabeth">
+                </div>
+                <div class="font">
+                    <p class="nombre">Elizabeth Jauregui Zarate</p>
+                    <p class="puesto">Equipo de diseño html/css/js</p>
+                    <p>Mi nombre es Elizabeth y actualmente estoy cursando 3er semestre de la carrera de Robótica y
+                        Sistemas Digitales. Me considero una persona creativa, que constantemente está intentando
+                        cosas nuevas. Me apasiona mucho las ciencias exactas y la electrónica; mi sueño es algún día
+                        trabajar en la empresa Boston Dynamics. </p>
+                </div>
+            </div>
+            <!-- Integrante 3 -->
+            <div class="integrantes">
+                <div class="foto">
+                    <img src="zule.jpeg" alt="Zuleyca">
+                </div>
+                <div class="font">
+                    <p class="nombre">Zuleyca Guadalupe Balles Soto</p>
+                    <p class="puesto">Equipo de diseño html/css/js</p>
+                    <p>Hola, soy Regina, me encanta aprender cosas nuevas sobre programación. Estoy en 3er semestre
+                        de la carrera de Ingeniería en Tecnologías Computacionales y me gusta participar en
+                        proyectos creativos que ayuden a mejorar nuestra comunidad.</p>
+                </div>
+            </div>
+            <!-- Integrante 4 -->
+            <div class="integrantes">
+                <div class="foto">
+                    <img src="islas.jpeg" alt="MarianaI">
+                </div>
+                <div class="font">
+                    <p class="nombre">Mariana Islas Mondragón</p>
+                    <p class="puesto">Equipo de conexión IoT</p>
+                    <p>Hola, soy Regina, me encanta aprender cosas nuevas sobre programación. Estoy en 3er semestre
+                        de la carrera de Ingeniería en Tecnologías Computacionales y me gusta participar en
+                        proyectos creativos que ayuden a mejorar nuestra comunidad.</p>
+                </div>
+            </div>
+            <!-- Integrante 5 -->
+            <div class="integrantes">
+                <div class="foto">
+                    <img src="carrillo.jpeg" alt="MarianaC">
+                </div>
+                <div class="font">
+                    <p class="nombre">Mariana Carrillo Holguín</p>
+                    <p class="puesto">Equipo de conexión IoT</p>
+                    <p>Hola, soy Regina, me encanta aprender cosas nuevas sobre programación. Estoy en 3er semestre
+                        de la carrera de Ingeniería en Tecnologías Computacionales y me gusta participar en
+                        proyectos creativos que ayuden a mejorar nuestra comunidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cambiar ID duplicado -->
+    <section id="contenedores-info" class="active">
+        <div class="titu"> 
+            <h2>Contenedores</h2>
+        </div> 
+        <div class="contenedores-grid">
+            <div class="container" data-contenedor="001">
+                <img src="truck-icon.jpeg" alt="Contenedor">
+                <div class="font"> 
+                    <p>Contenedor #001</p>
+                    <p>Ubicación: Mérida, Yucatán</p>
+                </div> 
+            </div>
+            <div class="container1" data-contenedor="002">
+                <img src="truck-icon.jpeg" alt="Contenedor">
+                <div class="font"> 
+                    <p>Añadir Contenedor...</p>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sección de sensores -->
+    <section id="sensores" class="hidden">
+        <header class="header-dark">
+            <div class="sensor-title">
+                <h2 id="sensor-title">CONTENEDOR #001</h2> <!-- El título cambiará dinámicamente -->
+            </div>
+        </header>
+        <div class="sensor-container">
+            <!-- Indicadores principales -->
+            <div class="sensor-stats">
+                <div class="sensor-card">
+                    <p class="value" id="temp-value">-</p> <!-- Cambia a identificadores únicos -->
+                    <p class="label">Temperatura</p>
+                </div>
+                <div class="sensor-card">
+                    <p class="value" id="capacidad-value">-</p>
+                    <p class="label">Capacidad</p>
+                </div>
+                <div class="sensor-card">
+                    <p class="value" id="humedad-value">-</p>
+                    <p class="label">Humedad</p>
+                </div>
+                <div class="sensor-card">
+                    <p class="value" id="carga-value">-</p>
+                    <p class="label">Carga</p>
+                </div>
+            </div>
+
+            <!-- Registros -->
+            <div class="sensor-records">
+                <h3>Registros</h3>
+                <div class="records-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Fecha (día/mes/año) y hora (h:m)</th>
+                                <th>Temperatura</th>
+                                <th>Capacidad</th>
+                                <th>Humedad</th>
+                            </tr>
+                        </thead>
+                        <tbody id="records-body">
+                            <!-- Las filas se agregarán dinámicamente aquí -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
